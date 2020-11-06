@@ -7,6 +7,7 @@ class Rectangular_prism
     public:
         Rectangular_prism();
         float area();
+        float volume();
         ~Rectangular_prism();
 
 

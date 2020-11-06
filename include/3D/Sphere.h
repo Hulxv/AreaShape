@@ -7,6 +7,7 @@ class Sphere
     public:
         Sphere();
         float area();
+        float volume();
         virtual ~Sphere();
 
     protected:

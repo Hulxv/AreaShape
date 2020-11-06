@@ -6,7 +6,9 @@ class Circle
 {
     public:
         Circle();
+
         float area();
+
         virtual ~Circle();
 
     protected:

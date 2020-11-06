@@ -8,6 +8,7 @@ class cylinder
         cylinder();
 
         float area();
+        float volume();
         ~cylinder();
 
 

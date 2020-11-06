@@ -9,7 +9,7 @@ Rectangle::Rectangle()
     do
     {
         cout << "Enter the dimensions of the rectangle\n ";
-        cout << "lenght ";
+        cout << "lenght: ";
         cin >> lenght;
         cout << "width: ";
         cin >> width;

@@ -1,5 +1,7 @@
 #include "cylinder.h"
 #include <iostream>
+#include <math.h>
+
 using namespace std;
 cylinder::cylinder()
 {
@@ -26,6 +28,12 @@ float cylinder::area()
 {
     float area = 2 * pi * radius * (radius + height);
     return area;
+}
+
+float cylinder::volume()
+{
+    float volume = pi * pow(radius , 2) * height;
+    return volume;
 }
 cylinder::~cylinder()
 {

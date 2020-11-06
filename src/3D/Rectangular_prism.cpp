@@ -32,6 +32,11 @@ float Rectangular_prism::area()
 
 }
 
+float Rectangular_prism::volume()
+{
+    float volume = length * width * height;
+    return volume;
+}
 Rectangular_prism::~Rectangular_prism()
 {
 

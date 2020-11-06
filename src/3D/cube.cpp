@@ -26,6 +26,12 @@ float cube::area()
     return area;
 }
 
+float cube::volume()
+{
+    float volume = pow(t , 3);
+    return volume;
+}
+
 cube::~cube()
 {
 

@@ -8,6 +8,7 @@ class Cone
         Cone();
 
         float area();
+        float volume();
         ~Cone();
 
     private:

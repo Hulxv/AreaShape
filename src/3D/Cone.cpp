@@ -1,5 +1,6 @@
 #include "Cone.h"
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -27,11 +28,14 @@ Cone::Cone()
 
 float Cone::area()
 {
-
-    float area = pi * radius * (radius * height);
-    return area;
+    return pi * radius * (radius * height);
 }
 
+float Cone::volume()
+{
+    float volume = 0.33 * pi * pow(radius, 2) * height;
+    return volume;
+}
 Cone::~Cone()
 {
 

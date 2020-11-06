@@ -30,6 +30,12 @@ float Sphere::area()
     return area;
 }
 
+float Sphere::volume()
+{
+    float volume = 1.33 * pi * pow(radius, 3);
+    return volume;
+}
+
 Sphere::~Sphere()
 {
     //dtor

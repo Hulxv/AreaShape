@@ -85,9 +85,8 @@ void S_3D(string s)
        cout << "1.Cone\n";
        cout << "2.Cube\n";
        cout << "3.Cylinder\n";
-       cout << "4.Hemisphere\n";
-       cout << "5.Rectangular Prism\n";
-       cout << "6.Sphere\n\n";
+       cout << "4.Rectangular Prism\n";
+       cout << "5.Sphere\n\n";
        cin >> s;
 
        if (s == "1" || s == "cone" || s == "Cone" || s == "1.Cone" || s == "1.cone")
@@ -99,14 +98,11 @@ void S_3D(string s)
        else if (s == "3" || s == "Cylinder" || s == "cylinder" || s == "3.cylinder" || s == "3.Cylinder")
            numShape3D = 3;
 
-       else if (s == "4" || s == "4.Hemisphere" || s == "4.hemisphere" || s == "Hemisphere" || s == "hemisphere")
+       else if (s == "4" || s == "4.rectangular prism" || s == "4.Rectangular prism" || s == "rectangular prism" || s == "Rectangular prism" || s == "Rectangular Prism")
            numShape3D = 4;
 
-       else if (s == "5" || s == "5.rectangular prism" || s == "5.Rectangular prism" || s == "rectangular prism" || s == "Rectangular prism" || s == "Rectangular Prism")
+       else if (s == "5" || s == "5.Sphere" || s == "5.sphere" || s == "sphere" || s == "Sphere")
            numShape3D = 5;
-
-       else if (s == "6" || s == "6.Sphere" || s == "6.sphere" || s == "sphere" || s == "Sphere")
-           numShape3D = 6;
        else
        {
            cout << "Error: You must choose a shape\n";
@@ -180,6 +176,7 @@ void getArea3D()
     {
         Cone ob;
         cout << "Area = " << ob.area() << endl;
+        cout << "Volume = " << ob.volume() << endl;
     }
 
     // ---------------------------------------------------------------
@@ -188,6 +185,7 @@ void getArea3D()
     {
         cube ob;
         cout << "Area = " << ob.area() << endl;
+        cout << "Volume = " << ob.volume() << endl;
     }
 
     // ---------------------------------------------------------------
@@ -196,30 +194,25 @@ void getArea3D()
     {
         cylinder ob;
         cout << "Area = " << ob.area() << endl;
+        cout << "Volume = " << ob.volume() << endl;
     }
 
     // ---------------------------------------------------------------
 
     else if (numShape3D == 4)
     {
-        Hemisphere ob;
+        Rectangular_prism ob;
         cout << "Area = " << ob.area() << endl;
+        cout << "Volume = " << ob.volume() << endl;
     }
 
     // ---------------------------------------------------------------
 
     else if (numShape3D == 5)
     {
-        Rectangular_prism ob;
-        cout << "Area = " << ob.area() << endl;
-    }
-
-    // ---------------------------------------------------------------
-
-    else if (numShape3D == 6)
-    {
         Sphere ob;
-        cout << "Area = " << ob.area() << endl;;
+        cout << "Area = " << ob.area() << endl;
+        cout << "Volume = " << ob.volume() << endl;
     }
 }
 

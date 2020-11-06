@@ -32,6 +32,7 @@ float Circle::area()
     float area = pow(radius, 2) * pi;
     return area;
 }
+
 Circle::~Circle()
 {
     //dtor

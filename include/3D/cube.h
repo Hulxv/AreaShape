@@ -7,6 +7,7 @@ class cube
     public:
         cube();
         float area();
+        float volume();
         ~cube();
 
     private:
